@@ -1,10 +1,57 @@
 .header {
-    padding: 15px 0px 17px 0px;
+  padding: 13px 0px 0px 0px;
+  background-color: white;
 
-    .container {
-        padding-top: 15px;
-        padding-bottom: 17px;
-        background: $header-bcg;
-        border-radius: 75px;
+  .container {
+    padding-top: 10px;
+    padding-bottom: 11px;
+    background: $header-bcg;
+    border-radius: 75px;
+    border: 2px solid $gray-color;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    &-img {
+      width: 30px;
     }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    color: #22253b;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 104.4%;
+  }
+
+  &__btn {
+    color: $gray-color;
+    border: 2px solid $color-dark;
+    border-radius: 5px;
+    padding: 8px 10px;
+    transition: 250ms;
+    &:hover {
+      background-color: $color-dark;
+      color: $color-white;
+    }
+  }
 }
