@@ -43,7 +43,7 @@ html {
 
 body {
   position: relative;
-  font-family: "DM Sans", serif;
+  font-family: "Rubik", sans-serif;
   background-color: black;
 }
 
@@ -77,4 +77,80 @@ body {
   padding-bottom: 17px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 75px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer__logo {
+  display: flex;
+  gap: 8px;
+  transition: 250ms;
+}
+.footer__logo:hover {
+  opacity: 0.9;
+}
+.footer__logo-text {
+  width: 100px;
+}
+.footer__logo-img {
+  width: 30px;
+  height: 30px;
+}
+.footer__sozs {
+  display: flex;
+  gap: 10px;
+}
+.footer__soz-link {
+  width: 35px;
+  transition: 250ms;
+}
+.footer__soz-link:hover {
+  opacity: 0.9;
+}
+.footer__soz-link-img {
+  width: 35px;
+}
+.footer__nav {
+  display: flex;
+  gap: 166px;
+}
+.footer__items {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footer__item-link {
+  color: #22253B;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 104.4%;
+  transition: 250ms;
+}
+.footer__item-link:hover {
+  opacity: 0.8;
+}
+.footer__nums {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.footer__num:first-child > .footer__num-link {
+  color: #F15525;
+}
+.footer__num-link {
+  color: #22253B;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  transition: 250ms;
+}
+.footer__num-link:hover {
+  opacity: 0.8;
 }/*# sourceMappingURL=main.css.map */

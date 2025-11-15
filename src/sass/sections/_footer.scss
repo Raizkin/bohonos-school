@@ -1,0 +1,101 @@
+.footer {
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__logo {
+        display: flex;
+        gap: 8px;
+        transition: 250ms;
+
+        &:hover {
+            opacity: .9;
+        }
+
+        &-text {
+            width: 100px;
+        }
+
+        &-img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &__sozs {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__soz {
+        &-link {
+            width: 35px;
+            transition: 250ms;
+
+            &:hover {
+                opacity: .9;
+            }
+
+            &-img {
+                width: 35px;
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        gap: 166px;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__item {
+        &-link {
+            color: $gray-color;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 104.4%;
+            transition: 250ms;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+
+    &__nums {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__num:first-child > &__num-link {
+        color: $accent-color;
+    }
+
+    &__num {
+        &-link {
+            color: $gray-color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 23px;
+            transition: 250ms;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+}
