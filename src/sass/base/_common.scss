@@ -1,0 +1,11 @@
+html {
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    // scrollbar-color: white gray;
+}
+
+body {
+    position: relative;
+    font-family: "DM Sans", serif;
+    background-color: black;
+}

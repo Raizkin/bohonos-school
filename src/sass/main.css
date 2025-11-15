@@ -1,0 +1,80 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+html {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: "DM Sans", serif;
+  background-color: black;
+}
+
+.container {
+  max-width: 1246px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  transition: 500ms;
+}
+@media screen and (min-width: 362px) {
+  .container {
+    width: 362px;
+  }
+}
+@media screen and (min-width: 728px) {
+  .container {
+    width: 728px;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .container {
+    width: 1246px;
+  }
+}
+
+.header {
+  padding: 15px 0px 17px 0px;
+}
+.header .container {
+  padding-top: 15px;
+  padding-bottom: 17px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 75px;
+}/*# sourceMappingURL=main.css.map */
