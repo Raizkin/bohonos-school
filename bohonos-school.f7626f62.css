@@ -144,7 +144,7 @@ body {
 
 .header__btn {
   color: #22253b;
-  border: 2px solid #222831;
+  border: 2px solid #deb887;
   border-radius: 5px;
   padding: 8px 10px;
   text-decoration: none;
@@ -152,8 +152,8 @@ body {
 }
 
 .header__btn:hover {
-  color: #fff;
-  background-color: #222831;
+  color: #22253b;
+  background-color: #deb887;
 }
 
 @media screen and (width <= 728px) {

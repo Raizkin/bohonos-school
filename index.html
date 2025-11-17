@@ -1,22 +1,40 @@
-<!DOCTYPE html><html lang=uk><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><title>BOHONOS</title><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Manrope:wght@200..800&amp;family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&amp;family=Rubik+Bubbles&amp;family=Rubik+Mono+One&amp;family=Rubik:ital,wght@0,300..900;1,300..900&amp;family=Ruslan+Display&amp;display=swap" rel=stylesheet><link rel=stylesheet href=/bohonos-school/bohonos-school.b7d84123.css><body>
+<!DOCTYPE html><html lang=uk><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><title>BOHONOS</title><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Manrope:wght@200..800&amp;family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&amp;family=Rubik+Bubbles&amp;family=Rubik+Mono+One&amp;family=Rubik:ital,wght@0,300..900;1,300..900&amp;family=Ruslan+Display&amp;display=swap" rel=stylesheet><link rel=stylesheet href=/bohonos-school/bohonos-school.6a8de2cf.css><body>
     <header class=header>
-    <div class=container>
-        <a href=/bohonos-school/index.html class=header__logo><img src=/bohonos-school/logo.4b79520e.png alt=logo class=header__logo-img></a>
+  <div class="container header__inner">
+    <a href=/bohonos-school/index.html class=header__logo>
+      <img src=/bohonos-school/logo.4b79520e.png alt=logo class=header__logo-img>
+      <span class=header__logo-text>Bohonos School</span>
+    </a>
 
-        <nav class=header__nav>
-            <ul class=header__items>
-                <li class=header__item><a class=header__link>Про школу</a></li>
-                <li class=header__item><a class=header__link>Для кого</a></li>
-                <li class=header__item><a class=header__link>Як проходять уроки</a></li>
-                <li class=header__item><a class=header__link>Пробний урок</a></li>
-            
-            </ul>
-            <a href=# class=header__btn>Звязатись</a>
-        </nav>
-    </div>
+    <nav class=header__nav>
+      <ul class=header__items>
+        <li class=header__item>
+          <a class=header__link>Про школу</a>
+        </li>
+        <li class=header__item>
+          <a class=header__link>Для кого</a>
+        </li>
+        <li class=header__item>
+          <a class=header__link>Як проходять уроки</a>
+        </li>
+        <li class=header__item>
+          <a class=header__link>Пробний урок</a>
+        </li>
+      </ul>
+      <a href=# class=header__btn>Звязатись</a>
+    </nav>
+
+ 
+   <button class=header__burger type=button aria-label="Открыть меню" data-modal-header-open>
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+  </div>
 </header>
+
     <section class=hero>
-  <div class="container hero__inner">
+  <div class=container>
     <div class=hero__content>
       <h1 class=hero__title>Англійська, яку діти чекають</h1>
       <p class=hero__subtitle>
@@ -99,5 +117,41 @@
         </div>
     </div>
 </footer>
+    
+    <div class="backdrop is-hidden" data-modal-header>
+  <div class=backdrop__inner>
+    <div class=backdrop__top>
+      <a class=header__logo href=/bohonos-school/index.html>
+        <img src=/bohonos-school/logo.4b79520e.png alt=logo class=header__logo-img>
+      </a>
+
+      <button class=backdrop__close type=button aria-label="Закрыть меню" data-modal-header-close>
+        ✕
+      </button>
+    </div>
+
+    <nav class=backdrop__nav>
+      <ul class=backdrop__list>
+        <li class=backdrop__item>
+          <a class=backdrop__link>Про школу</a>
+        </li>
+        <li class=backdrop__item>
+          <a class=backdrop__link>Для кого</a>
+        </li>
+        <li class=backdrop__item>
+          <a class=backdrop__link>Як проходять уроки</a>
+        </li>
+        <li class=backdrop__item>
+          <a class=backdrop__link>Пробний урок</a>
+        </li>
+        <li class=backdrop__item>
+          <a class="backdrop__link backdrop__link--btn" href=#>Звязатись</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+    
+    <script type=module src=/bohonos-school/bohonos-school.d0a2d58e.js></script>
 
 
