@@ -4,7 +4,9 @@
 @import "./base/container";
 
 @import "./sections/header";
-@import "./sections/hero";
+@import "./sections/main/hero";
+@import "./sections/main/learn";
+@import "./sections/main/krok";
 @import "./sections/footer";
 
-@import "./sections/menu";
+@import "./sections/main/menu";
