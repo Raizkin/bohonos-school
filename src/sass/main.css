@@ -131,15 +131,15 @@ body {
 }
 .header__btn {
   color: #22253B;
-  border: 2px solid #222831;
+  border: 2px solid burlywood;
   border-radius: 5px;
   padding: 8px 10px;
   transition: 250ms;
   text-decoration: none;
 }
 .header__btn:hover {
-  background-color: #222831;
-  color: #ffffff;
+  background-color: burlywood;
+  color: #22253B;
 }
 
 @media screen and (max-width: 728px) {
