@@ -42,8 +42,7 @@
     }
   }
 
-  &__name {
-  }
+  
 
   &__nav {
     display: flex;
@@ -68,15 +67,15 @@
 
   &__btn {
     color: $gray-color;
-    border: 2px solid $color-dark;
+    border: 2px solid burlywood;
     border-radius: 5px;
     padding: 8px 10px;
     transition: 250ms;
     text-decoration: none;
 
     &:hover {
-      background-color: $color-dark;
-      color: $color-white;
+      background-color: burlywood;
+      color: $gray-color;
     }
   }
 }
