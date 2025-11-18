@@ -1,5 +1,5 @@
 .header {
-  padding: 83px 0 0;
+  padding: 68px 0 0;
 
   @media screen and (min-width: 728px) {
     padding: 90px 0px 20px 0px;
@@ -65,7 +65,7 @@
 
   &__nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     gap: 20px;
   }
@@ -74,12 +74,20 @@
     display: flex;
     align-items: center;
     gap: 32px;
+
+    @media screen and (min-width: 728px) {
+      gap: 16px;
+    }
+
+    @media screen and (min-width: 1246px) {
+      gap: 32px;
+    }
   }
 
   &__link {
     color: $gray-color;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 104.4%;
     text-decoration: none;
     position: relative;
@@ -112,6 +120,7 @@
     padding: 8px 10px;
     transition: 250ms;
     text-decoration: none;
+    font-weight: 500;
 
     &:hover {
       background-color: burlywood;

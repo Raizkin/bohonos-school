@@ -19,22 +19,36 @@
   }
 
   &__title {
-    font-size: 40px;
-    line-height: 1.2;
-    margin-bottom: 18px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 1;
+    margin: 0px 0px 20px 0px;
+
+    @media screen and (min-width: 728px) {
+      font-size: 55px;
+    }
   }
 
   &__subtitle {
     color: #222;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 12px;
+
+    @media screen and (min-width: 728px) {
+      font-size: 18px;
+    }
   }
 
   &__note {
     color: #222;
     margin-bottom: 12px;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 1.25;
+
+    @media screen and (min-width: 728px) {
+      font-size: 16px;
+    }
   }
 
   &__link {
@@ -48,16 +62,16 @@
     box-shadow: 0 10px 24px #0000002e;
     margin-top: 20px;
 
-         color: $color-white;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 1;
-            letter-spacing: -0.48px;
-            transition: 250ms;
+    color: $color-white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.48px;
+    transition: 250ms;
 
-            &:hover {
-                background: $why-us-bg;
-            }
+    &:hover {
+      background: $why-us-bg;
+    }
   }
 
   &__img {

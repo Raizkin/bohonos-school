@@ -76,7 +76,7 @@ body {
 }
 
 .header {
-  padding: 83px 0 0;
+  padding: 68px 0 0;
 }
 @media screen and (min-width: 728px) {
   .header {
@@ -138,7 +138,7 @@ body {
 }
 .header__nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   gap: 20px;
 }
@@ -147,10 +147,20 @@ body {
   align-items: center;
   gap: 32px;
 }
+@media screen and (min-width: 728px) {
+  .header__items {
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .header__items {
+    gap: 32px;
+  }
+}
 .header__link {
   color: #22253B;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 104.4%;
   text-decoration: none;
   position: relative;
@@ -179,6 +189,7 @@ body {
   padding: 8px 10px;
   transition: 250ms;
   text-decoration: none;
+  font-weight: 500;
 }
 .header__btn:hover {
   background-color: burlywood;
@@ -210,20 +221,37 @@ body {
   max-width: 480px;
 }
 .hero__title {
-  font-size: 40px;
-  line-height: 1.2;
-  margin-bottom: 18px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 1;
+  margin: 0px 0px 20px 0px;
+}
+@media screen and (min-width: 728px) {
+  .hero__title {
+    font-size: 55px;
+  }
 }
 .hero__subtitle {
   color: #222;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 728px) {
+  .hero__subtitle {
+    font-size: 18px;
+  }
 }
 .hero__note {
   color: #222;
   margin-bottom: 12px;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1.25;
+}
+@media screen and (min-width: 728px) {
+  .hero__note {
+    font-size: 16px;
+  }
 }
 .hero__link {
   background: #F15525;
@@ -319,7 +347,7 @@ body {
   background-color: #EAF2F5;
   border-radius: 30px;
   text-align: center;
-  padding: 24px 10px 20px 10px;
+  padding: 26px 10px 20px 10px;
 }
 @media screen and (min-width: 1246px) {
   .learn__item:nth-last-child(3) {
@@ -351,17 +379,17 @@ body {
 }
 @media screen and (min-width: 728px) {
   .learn__item {
-    padding: 50px 10px 31px 10px;
+    padding: 26px 10px 31px 10px;
     gap: 10px;
   }
 }
 .learn__item-img {
-  width: 40px;
+  max-width: 100%;
   margin: 0px auto 5px auto;
 }
 @media screen and (min-width: 728px) {
   .learn__item-img {
-    width: 58px;
+    max-width: 150px;
     margin: 0px auto 9px auto;
   }
 }
@@ -486,7 +514,7 @@ body {
   }
 }
 .krok__item-num {
-  color: #5096FF;
+  color: #F15525;
   font-size: 50px;
   font-weight: 700;
   line-height: 1;
@@ -581,7 +609,9 @@ body {
 }
 .help__list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "a b b" "c c d";
   -moz-column-gap: 30px;
        column-gap: 30px;
   row-gap: 40px;
@@ -597,6 +627,8 @@ body {
   }
 }
 .help__item {
+  padding: 50px 40px;
+  width: 100%;
   border-radius: 40px;
   background: #ffffff;
   min-height: 313px;
@@ -604,9 +636,26 @@ body {
   box-sizing: border-box;
   display: flex;
 }
-@media (max-width: 728px) {
-  .help__item {
-    width: 100%;
+.help__item:nth-child(1) {
+  grid-area: a;
+  padding: 15px 10px;
+}
+.help__item:nth-child(2) {
+  grid-area: b;
+}
+.help__item:nth-child(3) {
+  grid-area: c;
+}
+.help__item:nth-child(4) {
+  grid-area: d;
+  padding: 15px 10px;
+}
+@media (min-width: 728px) {
+  .help__item:first-child, .help__item:nth-child(4) {
+    padding: 15px 10px;
+  }
+  .help__item:nth-child(2), .help__item:last-child {
+    padding: 50px 60px;
   }
 }
 .help__item--text {
@@ -620,13 +669,9 @@ body {
   }
 }
 .help__item--image {
+  max-width: 100%;
   justify-content: center;
   align-items: center;
-}
-@media (max-width: 768px) {
-  .help__item--image {
-    width: 100%;
-  }
 }
 .help__item-img {
   width: 100%;
@@ -681,6 +726,8 @@ body {
 }
 .footer__logo-text {
   color: #22253B;
+  font-size: 14px;
+  font-weight: 700;
   width: 100px;
 }
 .footer__logo-img {
@@ -727,6 +774,12 @@ body {
   gap: 4px;
 }
 .footer__num:first-child > .footer__num-link {
+  color: #F15525;
+}
+.footer__num:first-child > .footer__num-link:hover {
+  color: #22253B;
+}
+.footer__num:last-child > .footer__num-link:hover {
   color: #F15525;
 }
 .footer__num-link {
@@ -824,6 +877,24 @@ body {
   text-decoration: none;
   color: #1c2540;
   font-size: 20px;
+  position: relative;
+  transition: width ease-in-out 250ms;
+}
+.backdrop__list > .backdrop__item:not(:last-child) > .backdrop__link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  border-radius: 2px;
+  border-bottom: 2px solid #F15525;
+  transition: width ease-in-out 250ms;
+}
+.backdrop__list > .backdrop__item:not(:last-child) > .backdrop__link:hover::after {
+  width: 100%;
+}
+.backdrop__link:hover {
+  opacity: 0.8;
 }
 
 .backdrop__link--btn {

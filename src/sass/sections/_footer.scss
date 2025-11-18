@@ -30,6 +30,8 @@
 
         &-text {
             color: $gray-color;
+            font-size: 14px;
+            font-weight: 700;
             width: 100px;
         }
 
@@ -91,6 +93,17 @@
 
     &__num:first-child>&__num-link {
         color: $accent-color;
+
+        &:hover {
+            color: $gray-color;
+        }
+    }
+
+    &__num:last-child>&__num-link {
+
+        &:hover {
+            color: $accent-color;
+        }
     }
 
     &__num {
@@ -100,6 +113,7 @@
             font-weight: 400;
             line-height: 23px;
             transition: 250ms;
+
 
             &:hover {
                 opacity: .8;
