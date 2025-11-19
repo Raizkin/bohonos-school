@@ -439,7 +439,7 @@ body {
 
 @media screen and (width >= 728px) {
   .learn__item-img {
-    max-width: 150px;
+    max-width: 100px;
     margin: 0 auto 9px;
   }
 }
